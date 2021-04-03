@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACFT Calculuator</title>
+    
+</head>
+<body>
+    <div app-wrapper>
+        <div class='header'>
+            <h1>ACFT Calculuator</h1>
+        </div>
+        <div id='web-app-wrapper'>
+            <div id='web-app'>
+                <div id='app-header'>
+                    <h2>TYPE IN YOUR SCORES</h2>
+                </div>
+                <form>
+                    <div>MDL:<div></div><input id='deadlift' maxlength='3'class='exercise' placeholder='deadlift' pattern="(\d){2,3}"><label id='deadlift-prompt'></label><br></div>
+                    <div>SPT:<div></div><input id='ball-throw' maxlength='4'class='exercise' placeholder='ball throw'><br><label id='ball-throw-prompt'></label></div>
+                    <div>HRP:<div></div><input id='push-ups' maxlength='2'class='exercise' placeholder='push ups'><br><label id='push-ups-prompt'></label></div>
+                    <div>SDC:</div>
+                        <div>
+                            <input id='sprint-drag-carry-min' class='exercise' placeholder='minutes' maxlength='1'>:<input maxlength='2' id='sprint-drag-carry-sec' class='exercise' placeholder='seconds'><label id='sdc-prompt'></label>
+                        </div><br>
+                    <div>LTK:<div></div><input id='leg-tucks' class='exercise' placeholder='leg tucks' maxlength='2'><label id='leg-tuck-prompt'></label><br></div>
+                    <div>2MR:</div>
+                    <div>
+                        <input id='two-mile-min' class='exercise' placeholder='minutes' maxlength='2'>:<input maxlength='2' id='two-mile-sec' class='exercise' placeholder='seconds' maxlength='2><label id='two-mile-promp'></label>                   
+                    </div><br>
+                </form>
+                <button id='calculate' type= button>calculate</button>
+            </div>
+        </div>
+    </div>
+<script src='scoreSheets.js'></script>
+<script src='fitnessCalculator.js'></script>
+</body>
+
+
+
+</html>
